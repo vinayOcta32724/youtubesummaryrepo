@@ -43,9 +43,6 @@ def get_transcript(video_id):
     # Retrieve the transcript of the video
     try:
       transcript = YouTubeTranscriptApi.get_transcript(video_id)
-    except TranscriptsDisabled:
-        logging.error(f"Subtitles are disabled for video ID {video_id}")
-        return jsonify({'error': 'Subtitles are disabled for this video'}), 400
     except Exception as e:
         logging.error(f"An error occurred: {e}")
         return jsonify({'error': f"An error occurred: {e}"}), 500
