@@ -44,7 +44,7 @@ def get_transcript(video_id):
     try:
       transcript = YouTubeTranscriptApi.get_transcript(video_id)
     except Exception as e:
-        logging.error(f"An error occurred: {e}")
+        print("An error occurred: {e}")
         return jsonify({'error': f"An error occurred: {e}"}), 500
     return ' '.join([t['text'] for t in transcript])
 
