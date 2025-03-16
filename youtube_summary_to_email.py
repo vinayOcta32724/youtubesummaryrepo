@@ -41,7 +41,7 @@ def get_videos_from_channel(channel_id):
 
 def get_transcript(video_id):
     # Retrieve the transcript of the video
-    try
+    try:
       transcript = YouTubeTranscriptApi.get_transcript(video_id)
     except TranscriptsDisabled:
         logging.error(f"Subtitles are disabled for video ID {video_id}")
