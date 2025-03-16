@@ -15,7 +15,7 @@ YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 brevo_api_key = os.getenv("BREVO_API_KEY")
-call_back_url = os.getenv("RENDER_CALLBACK_URL")
+callback_url = os.getenv("RENDER_CALLBACK_URL")
 verify_token =  os.getenv("VERIFY_TOKEN")
 
 # Initialize APIs
