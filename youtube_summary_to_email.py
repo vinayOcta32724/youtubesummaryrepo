@@ -173,4 +173,5 @@ if __name__ == '__main__':
     channel_ids = ["UCwKB_00dPL3x5XmHF9IJCrg", "UCqW8jxh4tH1Z1sWPbkGWL4g", "UC7kCeZ53sli_9XwuQeFxLqw","UCdc6ObxhdQ8eZIFquU2xolA"] #parkev,akshat, tickersymbolyou, sahil
     for channel_id in channel_ids:
         subscribe_to_channel(channel_id, callback_url, verify_token)
-    app.run(port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
