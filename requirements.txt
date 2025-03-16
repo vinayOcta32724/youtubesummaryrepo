@@ -1,0 +1,6 @@
+Flask
+google-api-python-client
+openai
+requests
+twilio
+youtube-transcript-api
